@@ -54,7 +54,8 @@ Note: You should make sure that the user executing this (probably `www-data` or 
 
 ## Communication
 
-If you find a bug or want a new feature, you are welcome to file an issue on Github or even fix things yourself
+If you find a bug or want a new feature or just have a question, you are welcome to 
+[file an issue](https://github.com/mathisdt/nextcloud-news-filter/issues) or even fix things yourself
 and create a pull request. You can also [write me an email](https://zephyrsoft.org/contact-about-me)
 and I'll see what I can do.
 
