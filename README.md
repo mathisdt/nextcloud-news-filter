@@ -44,7 +44,7 @@ If you need help with regular expressions, you can e.g. look
 This script can be run in conjunction with Nextcloud's normal cron hook, e.g. like this:
 
 ```
-*/5 * * * * /usr/bin/php -f /path/to/nextcloud/cron.php ; ( /path/to/nextcloud-news-filter/main.py | grep -E '(filter|marking as read)' >>/path/to/nextcloud-news-filter.log )
+*/5 * * * * /usr/bin/php -f /path/to/nextcloud/cron.php ; ( /path/to/nextcloud-news-filter/main.py | grep -E '(filter|marking as read)' 2>&1 >>/path/to/nextcloud-news-filter.log )
 ```
 
 The part up to the semicolon was there before, only the latter part was appended when installing this script.
