@@ -65,7 +65,7 @@ if __name__ == '__main__':
             unread_item_count = unread_item_count + 1
             for one_filter in filters:
                 if ('feedId' not in one_filter
-                    or one_filter['feedId'] is None
+                    or one_filter['feedId'] is "NoneType"
                     or one_filter['feedId'] == item['feedId']) \
                         and ('titleRegex' not in one_filter
                              or one_filter['titleRegex'] is None
