@@ -25,6 +25,10 @@ Each filter has a name (or title) you can define as you like. It's enclosed in b
 You can add one or more of the following criteria. *Beware: If you don't add any attribute, then your filter
 will match all items!*
 
+**Attention**: All regular expressions are interpreted as standard strings, not as raw strings, so you have
+to apply escaping (see [the first paragraphs of the documentation](https://docs.python.org/3/library/re.html)).
+Example: the regex `\bABC\b` as the `titleRegex` needs to be written as `titleRegex = \\bABC\\b`. 
+
 * `feedId`: Apply the filter only on one specific feed. You can find out the number you should enter here
   by hovering your mouse over the feed name in the sidebar in Nextcloud News. The URL shown at the bottom of you screen
   ends in the right number, e.g. `.../items/feeds/32/` - here, the feed ID is 32.
