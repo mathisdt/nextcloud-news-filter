@@ -56,6 +56,24 @@ The part up to the semicolon was there before, only the latter part was appended
 Note: You should make sure that the user executing this (probably `www-data` or something similar) has the rights
 (1.) to execute the script and (2.) to write to the indicated log file.
 
+## How to run as docker container
+
+To run the script as a container, you need to build the image first.
+
+### Build the image
+Checkout this repository, then run the following command in the main directory:
+```
+sudo docker build -t nextcloud-news-filter:latest . 
+```
+
+### Run the container
+
+To run the container with the previously built image, use:
+```
+sudo docker run --rm --volume=./config.ini:/usr/src/app/config.ini  --name nextcloud-news-filter nextcloud-news-filter:latest
+```
+Note: This assumes you have your `config.ini` in the local dir, adjust the path otherwise.
+
 ## Communication
 
 If you find a bug or want a new feature or just have a question, you are welcome to 
