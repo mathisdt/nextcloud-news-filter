@@ -59,6 +59,7 @@ Note: You should make sure that the user executing this (probably `www-data` or 
 ## How to run as docker container
 
 To run the script as a container, you need to build the image first.
+For more information on Docker itself, consult https://docs.docker.com/engine/.
 
 ### Build the image
 Checkout this repository, then run the following command in the main directory:
